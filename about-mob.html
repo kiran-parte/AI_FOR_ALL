@@ -72,6 +72,36 @@
 }
 
 	</style>
+	
+	<style>
+	.mobile-foot{
+	display: none;
+	}
+	@media only screen and (max-width: 700px) {
+  .mobile-foot {
+    display: block;
+	bottom:0vw;
+	left:0vw;
+	width:100%;
+	position:fixed;
+	z-index:-1;
+  }
+}
+	.desktop-foot{
+	display: none;
+	}
+	@media screen and (min-width: 700px) {
+  .desktop-foot {
+    display: block;
+	bottom:0vw;
+	left:0vw;
+	width:100%;
+	position:fixed;
+	z-index:1;
+  }
+}
+
+	</style>
 
 </head> 
 
@@ -154,7 +184,7 @@ whatever I have learnt in the past couple of years, with everyone.</p>
 			    <h5 class="mt-5">About The Blog</h5>
 			   <p>This blog will be mainly focused on A.I. and it's related technologies. We will be discussing Python, Machine Learning algorithms, deep learning algorithms in detail, we will also be discussing the math behind these algorithms. We will start with python basics then move on to intermediate and advanced level. We will understand algorithms and data structures in python and solve a lot of coding problems. We will also be doing a lot of hands on projects, so stay tuned !!!</p>
 	    
-	    <footer class="footer text-center py-2 theme-bg-dark footval">
+	    <footer class="footer text-center py-2 theme-bg-dark mobile-foot desktop-foot">
 		   
 	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
             <span class="small" class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers
