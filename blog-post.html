@@ -79,13 +79,41 @@ div.sticky {
   z-index:1;
 }
 </style>
+	
+</style>
+	
+	<style media="all">
+	.mobile-sideview{
+	display:none;
+	}
+	@media only screen and (max-width: 700px) {
+  .mobile-sideview {
+    display: block;
+    right:0;
+    width:50%;
+    z-index:2;
+  }
+}
+	.desktop-sideview{
+	display: none;
+	}
+	@media screen and (min-width: 700px) {
+  .desktop-sideview {
+    display: block;
+    right:0;
+    width:30%;
+    z-index:2;
+  }
+}
+
+	</style>
 
 </head> 
 
 <body>
 	
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-light-grey " style="display:none;right:0;width:50%;z-index:2;" id="rightMenu">
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-light-grey desktop-sideview mobile-sideview" id="rightMenu">
 
   
   <div class=" w3-bar-item w3-green w3-display-container">
