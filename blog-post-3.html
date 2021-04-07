@@ -44,7 +44,7 @@
 
 
 /* Bare bones style for the desired effect */
-pre.code {
+pre.code1 {
     display: table;
     table-layout: fixed;
     width: 84vw; /* anything but auto, otherwise fixed layout not guaranteed */
@@ -53,7 +53,7 @@ pre.code {
 	border: solid 1px black;
 }
 @media screen and (min-width: 701px) {
-  pre.code {
+  pre.code1 {
     display: table;
     table-layout: fixed;
     width: 58vw; /* anything but auto, otherwise fixed layout not guaranteed */
@@ -63,28 +63,28 @@ pre.code {
 }
 }
 
-pre.code::before {
+pre.code1::before {
     counter-reset: linenum;
 }
-pre.code span.tr {
+pre.code1 span.tr {
     display: table-row;
     counter-increment: linenum;
 }
-pre.code span.th { /* used for line numbers */
+pre.code1 span.th { /* used for line numbers */
     display: table-cell;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
 }
-pre.code span.th::before {
+pre.code1 span.th::before {
     content: counter(linenum);
     text-align: right;
     display: block;
 }
-pre.code span.th {
+pre.code1 span.th {
     width: 3em; /* or whatever the desired width of the numbers column is */
 }
-pre.code code {
+pre.code1 code {
     display: table-cell;
 }
 
@@ -92,7 +92,7 @@ pre.code code {
 
 
 
-pre.code span.th {
+pre.code1 span.th {
     background: #f0f0f0;
     padding: 3px;
     padding-top: 0px;
@@ -100,20 +100,20 @@ pre.code span.th {
     border-top: solid 1px silver;
 	
 }
-pre.code span.th::before {
+pre.code1 span.th::before {
     font-size: 90%;
     color: #999;
 }
-pre.code span.tr.first-row span.th {
+pre.code1 span.tr.first-row span.th {
     border-top: none;
 }
-pre.code code {
+pre.code1 code {
     padding: 3px;
 }
-pre.code span.e code {
+pre.code1 span.e code {
     background: #f0ffff;
 }
-pre.code span.th::before {
+pre.code1 span.th::before {
     content: counter(linenum) ".";
 }
 
@@ -413,7 +413,7 @@ function myAccFunc(id) {
 					<h3 id="install_process" class="mt-5 mb-3"><b>How to declare variables in python?</b></h3>
 					<p>There is no specific command to declare variables in python. Declaring a variable is pretty straightforward and easy. You just write the name of the varaible and assigna a value to it.
 					
-<pre class="code w3-card">
+<pre class="code1 w3-card">
 <span class="tr first-row"><span class="th"></span><code><font color="#8b0000"><b>#These are variables in python</b></font></code></span>
 <span class="tr e"><span class="th"></span><code></code></span>
 <span class="tr"><span class="th"></span><code><b>var = 23 <font color="#8b0000">#integer variable</font></b></code></span>
