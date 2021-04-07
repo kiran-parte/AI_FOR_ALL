@@ -87,7 +87,7 @@ div.sticky {
 	.desktop-sideview{
 display: none;
     right:0;
-    width:50%;
+    width:60%;
     z-index:2;
 	}
 	@media screen and (min-width: 700px) {
@@ -139,7 +139,7 @@ display: none;
   </div>
   <a href="#install_process" class="w3-bar-item w3-button"><b>Installation and getting started</b></a>
   
-  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc')">
   <b>Dashboard</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc" class="w3-hide w3-white w3-card">
@@ -148,7 +148,7 @@ display: none;
 	<a href="#create_new" class="w3-bar-item w3-button" style="margin-left: 20px;">creating a new notebook</a>
 </div>
 
-<button class="w3-button w3-block w3-left-align" onclick="myAccFunc1()">
+<button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc1')">
   <b>User Interface</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc1" class="w3-hide w3-white w3-card">
@@ -158,7 +158,7 @@ display: none;
 	<a href="#kernel" class="w3-bar-item w3-button" style="margin-left: 20px;">Kernel indicator</a>
 </div>
 
-<button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+<button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc2')">
   <b>Cells</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc2" class="w3-hide w3-white w3-card">
@@ -166,7 +166,7 @@ display: none;
     <a href="#cell_operation" class="w3-bar-item w3-button" style="margin-left: 20px;">Cell operations</a>
 </div>
 
-<button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+<button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc3')">
   <b>Edit and command mode</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc3" class="w3-hide w3-white w3-card">
@@ -174,7 +174,7 @@ display: none;
     <a href="#command_mode" class="w3-bar-item w3-button" style="margin-left: 20px;">Command mode</a>
 </div>
 
-<button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+<button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc4')">
   <b>Markup tags used in markdown cells</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc4" class="w3-hide w3-white w3-card">
@@ -193,7 +193,7 @@ display: none;
 	<a href="#videos" class="w3-bar-item w3-button" style="margin-left: 20px;">Embedding videos</a>
 </div>
 
-<button class="w3-button w3-block w3-left-align" onclick="myAccFunc5()">
+<button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc5')">
   <b>Jupyter magic functions</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc5" class="w3-hide w3-white w3-card">
@@ -256,66 +256,6 @@ function topFunction() {
 <script>
 function myAccFunc() {
   var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-grey";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-grey", "");
-  }
-}
-
-function myAccFunc1() {
-  var x = document.getElementById("demoAcc1");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-grey";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-grey", "");
-  }
-}
-
-function myAccFunc2() {
-  var x = document.getElementById("demoAcc2");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-grey";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-grey", "");
-  }
-}
-
-function myAccFunc3() {
-  var x = document.getElementById("demoAcc3");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-grey";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-grey", "");
-  }
-}
-
-function myAccFunc4() {
-  var x = document.getElementById("demoAcc4");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-grey";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-grey", "");
-  }
-}
-
-function myAccFunc5() {
-  var x = document.getElementById("demoAcc5");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-grey";
