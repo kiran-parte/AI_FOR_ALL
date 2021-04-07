@@ -42,27 +42,13 @@
 
 <style type="text/css">
 
-
 /* Bare bones style for the desired effect */
 pre.code {
     display: table;
     table-layout: fixed;
-    width: 84vw; /* anything but auto, otherwise fixed layout not guaranteed */
+    width: 100%; /* anything but auto, otherwise fixed layout not guaranteed */
     white-space: pre-wrap;
-	margin: 80px auto;
-	border: solid 1px black;
 }
-@media screen and (min-width: 995px) {
-  pre.code {
-    display: table;
-    table-layout: fixed;
-    width: 58vw; /* anything but auto, otherwise fixed layout not guaranteed */
-    white-space: pre-wrap;
-	margin: 80px auto;
-	border: solid 1px black;
-}
-}
-
 pre.code::before {
     counter-reset: linenum;
 }
@@ -82,23 +68,24 @@ pre.code span.th::before {
     display: block;
 }
 pre.code span.th {
-    width: 3em; /* or whatever the desired width of the numbers column is */
+    width: 4em; /* or whatever the desired width of the numbers column is */
 }
 pre.code code {
     display: table-cell;
 }
 
 /* Additional styling demo */
-
-
-
+pre.code {
+    border: solid 1px black;
+    width: 400px;
+    margin: 80px auto;
+}
 pre.code span.th {
     background: #f0f0f0;
     padding: 3px;
     padding-top: 0px;
     border-right: solid 1px silver;
     border-top: solid 1px silver;
-	
 }
 pre.code span.th::before {
     font-size: 90%;
@@ -111,7 +98,7 @@ pre.code code {
     padding: 3px;
 }
 pre.code span.e code {
-    background: #f0ffff;
+    background: #f0f8ff;
 }
 pre.code span.th::before {
     content: counter(linenum) ".";
@@ -346,11 +333,16 @@ function myAccFunc(id) {
 					<p>There is no specific command to declare variables in python. Declaring a variable is pretty straightforward and easy. You just write the name of the varaible and assigna a value to it.
 					
 <pre class="code">
-<span style="background-color:white;" class="tr first-row"><span  class="th"></span><code>#These are variables in python</code></span>
+<span class="tr first-row"><span class="th"></span><code>   indented line</code></span>
+<span class="tr e"><span class="th"></span><code>unindented line</code></span>
+<span class="tr"><span class="th"></span><code>&#9;line starting and ending with tab&#9;</code></span>
 <span class="tr e"><span class="th"></span><code></code></span>
-<span class="tr"><span class="th"></span><code><b>var = 23 #integer variable</code></span>
-<span class="tr e"><span class="th"></span><code><b>var_num = 23.26 <font color="#8b0000">#float variable</font></b></code></span>
-<span class="tr"><span class="th"></span><code><b>var_name = <font color="green">"python"</font> <font color="#8b0000">#string variable</font></b></code></span>
+<span class="tr"><span class="th"></span><code>the above line should be empty</code></span>
+<span class="tr e"><span class="th"></span><code>overlong line that wraps around or so I hope because it's really long and should overflow the right sided margin of the web page in your browser</code></span>
+<span class="tr"><span class="th"></span><code>fill up to ten</code></span>
+<span class="tr e"><span class="th"></span><code>lines to check</code></span>
+<span class="tr"><span class="th"></span><code>alignment</code></span>
+<span class="tr e"><span class="th"></span><code>of numbers</code></span>
 </pre>
 
 <button onclick="myFunction('interpreter1')" class="w3-button w3-block w3-green w3-round-xlarge w3-left-align mb-5">Python interpreter <i class="fa fa-caret-down"></i></button>
