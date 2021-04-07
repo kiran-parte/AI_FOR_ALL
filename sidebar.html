@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html><head>
+
+<meta name="author" content="Pedro Gimeno Fortea">
+<meta name="description" content="How to number lines of text or code in HTML while letting it both wrap around and be correctly copied and pasted">
+
+<title>Line numbering test</title>
+<style type="text/css">
+
+/* Bare bones style for the desired effect */
+pre.code {
+    display: table;
+    table-layout: fixed;
+    width: 100%; /* anything but auto, otherwise fixed layout not guaranteed */
+    white-space: pre-wrap;
+}
+pre.code::before {
+    counter-reset: linenum;
+}
+pre.code span.tr {
+    display: table-row;
+    counter-increment: linenum;
+}
+pre.code span.th { /* used for line numbers */
+    display: table-cell;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+pre.code span.th::before {
+    content: counter(linenum);
+    text-align: right;
+    display: block;
+}
+pre.code span.th {
+    width: 4em; /* or whatever the desired width of the numbers column is */
+}
+pre.code code {
+    display: table-cell;
+}
+
+/* Additional styling demo */
+pre.code {
+    border: solid 1px black;
+    width: 400px;
+    margin: 80px auto;
+}
+pre.code span.th {
+    background: #f0f0f0;
+    padding: 3px;
+    padding-top: 0px;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+}
+pre.code span.th::before {
+    font-size: 90%;
+    color: #999;
+}
+pre.code span.tr.first-row span.th {
+    border-top: none;
+}
+pre.code code {
+    padding: 3px;
+}
+pre.code span.e code {
+    background: #f0f8ff;
+}
+pre.code span.th::before {
+    content: counter(linenum) ".";
+}
+
+</style>
+
+</head><body>
+
+<!-- The pre's width can be any. 100% works just as well. -->
+<!-- We're using fixed table style (for speed). This column definition
+     mandates how wide the first column will be. -->
+<!-- -code- tags inserted for semantic purposes. -->
+<pre class="code">
+<span class="tr first-row"><span class="th"></span><code>   indented line</code></span>
+<span class="tr e"><span class="th"></span><code>unindented line</code></span>
+<span class="tr"><span class="th"></span><code>&#9;line starting and ending with tab&#9;</code></span>
+<span class="tr e"><span class="th"></span><code></code></span>
+<span class="tr"><span class="th"></span><code>the above line should be empty</code></span>
+<span class="tr e"><span class="th"></span><code>overlong line that wraps around or so I hope because it's really long and should overflow the right sided margin of the web page in your browser</code></span>
+<span class="tr"><span class="th"></span><code>fill up to ten</code></span>
+<span class="tr e"><span class="th"></span><code>lines to check</code></span>
+<span class="tr"><span class="th"></span><code>alignment</code></span>
+<span class="tr e"><span class="th"></span><code>of numbers</code></span>
+</pre>
+
+<p>The above code block meets all desirable properties of a numbered text:
+</p>
+<ol><li>
+    The code can be copied and pasted without the line numbers, respecting
+    newlines, spaces and tabs.
+</li><li>
+    The numbers are right-justified.
+</li><li>
+    The code can wrap around.
+</li><li>
+    When a line wraps around, it should go underneath the above line, not
+    underneath the line numbers.
+</li><li>
+    Both the numbers column and the text column should be style-able (notably,
+    the background of the whole column should be easily changeable).
+</li></ol>
+
+</body></html>
