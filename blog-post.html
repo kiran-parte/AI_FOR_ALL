@@ -44,7 +44,8 @@
     
     <!-- Theme CSS -->  
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-6.css">
+	<link id="darktheme" rel="stylesheet" href="assets/css/darkmode.css">	
 	
     
 	
@@ -52,6 +53,68 @@
 	<style>
 	span.small {font-size: 0.04vw;}
 	</style>
+	
+	<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #303030 ;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f0f8ff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #323F79;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #323F79;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
 	
 	
 <style>
@@ -209,7 +272,7 @@ function myAccFunc() {
 }
 </script>
     
-    <header class="header text-center">	    
+    <header class="header text-center inverted">	    
 	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">AI_FOR_ALL</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
@@ -250,9 +313,34 @@ function myAccFunc() {
 				    <a class="btn btn-primary" href="#">Get in Touch</a>
 				    
 				</div>
+				<p></p>
+				
+				<label class="switch" for="mycheck">
+  <input type="checkbox" onclick="toggledarkTheme()" id="mycheck">
+  <span class="slider round" ><p style="padding-top:6px;">&#127769;    &#9728;</p></span>
+</label>
 			</div>
 		</nav>
     </header>
+	
+	<script>
+        function toggledarkTheme() {
+	    var checkBox = document.getElementById("mycheck");
+			if (checkBox.checked == true){
+                document.documentElement.classList.toggle('dark');
+				document.querySelectorAll('.inverted').forEach((result) => {
+				result.classList.toggle('invert');
+				})
+            } else {
+                document.documentElement.classList.toggle('dark');
+				document.querySelectorAll('.inverted').forEach((result) => {
+				result.classList.toggle('invert');
+				})
+            }
+        }
+		
+		
+    </script>
     
     <div class="main-wrapper">
 	    
