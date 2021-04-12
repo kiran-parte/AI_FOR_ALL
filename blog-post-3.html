@@ -486,10 +486,10 @@ function myAccFunc(id) {
 				    <figure class="blog-banner">
 				        <img class="img-fluid" src="assets/images/post3/var_dat.png" alt="image">
 				    </figure>
-					<p class="mt-2">In this article we are going to look at variables in python. We are going to understand variables by answering some basic questions such as, what are variables?, why do we use variables?, How to declare variables?, what are naming conventions for variables?, etc. We are also going to look at some basic data types such as numbers and strings. we will be discussing every data type in detail in further articles, So let's get started!!!</p>
+					<p class="mt-2">In this article we are going to look at variables in python. We are going to understand variables by answering some basic questions such as, what are variables?, why do we use variables?, How to declare variables?, what are naming conventions for variables?, etc. We are also going to briefly discuss some basic data types such as numbers and strings. We will be understanding every data type in detail in further articles, So let's get started!!!</p>
 					<h3 id="what_and_why" class="mt-5 mb-3"><b>What are variables and why do we use them?</b></h3>
-					<p>Variables in python are reserved memory locations. They act as a containers to store data. So basically each variable is pointing to a memory location and the value stored in the variable can be accessed by calling the name of the variable.</p>
-					<p>Suppose you have to write 1000s of lines of code and there is one value which is occuring repeatedly in your code, now suddenly you want to change that value, one thing you can do is go to each line and change that value manually which is not feasible. Here variables come into picture. You declare a variable once and you store the value in that variable. Now whenever you want that value anywhere in your code you can get it easily by calling the name of the variable, in which that value has been stored. Now suppose you want to change that value, wherever it appears in your code, you can do that easily by changing the value stored in the variable.
+					<p>Variables in python are reserved memory locations. They act as containers to store data. So basically each variable is pointing to a memory location and the value stored in the variable can be accessed by calling the name of the variable.</p>
+					<p>Suppose you have to write 1000s of lines of code and there is one value which is occuring repeatedly in your code, now suddenly you want to change that value, one thing you can do is go to each line and change that value manually, which is not feasible. Here variables come into picture. You declare a variable once and you store that value in the variable. Now whenever you want that value anywhere in your code you can get it easily by calling the name of the variable, in which that value has been stored. Now suppose you want to change that value, wherever it appears in your code, you can do that easily by changing the value stored in the variable.
 					
 					<h3 id="declare" class="mt-5 mb-3"><b>How to declare variables in python?</b></h3>
 					<p>There is no specific command to declare variables in python. Declaring a variable is pretty straightforward and easy. You just write the name of the variable and assign a value to it.
@@ -497,12 +497,12 @@ function myAccFunc(id) {
 <pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#These are variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"></code></span>
-<span class="tr e"><span class="th"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in variable "var1"</font></b></code></span>
-<span class="tr"><span class="th"></span><code class="nohighlight"><b>var2 = 23.26 <font color="#8b0000">#23.26 is stored variable "var2"</font></b></code></span>
-<span class="tr e"><span class="th"></span><code class="nohighlight"><b>var3 = <font color="#009900">"python"</font> <font color="#8b0000">#python is stored in variable "var3"</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in variable var1</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>var2 = 23.26 <font color="#8b0000">#23.26 is stored variable var2</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>var3 = <font color="#009900">"python"</font> <font color="#8b0000">#python is stored in variable var3</font></b></code></span>
 </pre>
 
-<p>As we discussed earlier the value stored in a variable can be easily accessed by calling the name of that variable so now, let's print the values we stored in our variables. We can easily do that by using the <code class="w3-codespan">print</code> statement in python. The print statement is a built-in function in python which we will be discussing in detail when we look at built-in functions</p>
+<p>As we discussed earlier the value stored in a variable can be easily accessed by calling the name of that variable so now, let's print the values we stored in our variables. We can easily do that by using the <code class="w3-codespan">print</code> statement in python. The print statement is a built-in function in python which we will be discussing in detail when we look at <a href="#" onclick="return false;">built-in functions</a>.</p>
 
 <p>To print the value stored in a variable just pass the name of that variable as a parameter into the print function <code class="w3-codespan">print(variable_name)</code>.</p>
 <pre class="code w3-card-4">
@@ -546,7 +546,7 @@ function myFunction(id) {
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="val_assign" style="padding-top:6px;color:white;"><b>Assigning a value to a variable</b></h4>
 				</div>
-				<p>As we discussed earlier, there is no special command to assign a value to a variable. To declare a variable just write the name of the variable and assign a value to it. If you change the value of an existing variable i.e. if you assign a new value to a pre-existing variable, the old value is discarded.</p>
+				<p>As we discussed earlier, there is no special command to assign a value to a variable. To declare a variable just write the name of the variable and assign a value to it. If you change the value of an existing variable i.e. if you assign a new value to a pre-existing variable, the old value will be discarded.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in var1</font></b></code></span>
@@ -761,7 +761,7 @@ function myFunction(id) {
 
 </table>
 				<h3 id="object_ref" class="mt-5 mb-3"><b>Object Referencing and Identity</b></h3>
-				<p>What exactly happens when we assign a value to a variable in python? The python variable is a reserved memory location i.e. when you declare a variable, that variable is pointing to the memory location where the assigned value is stored. So basically a variable is a name given to the memory location where the <code class="w3-codespan"><a href="#" onclick="return false;">object</a></code> is stored and you can get the object by calling the name of that variable.</p>
+				<p>What exactly happens when we assign a value to a variable in python? The python variable is a reserved memory location i.e. when you declare a variable, that variable is pointing to the memory location, where the assigned value has been stored. So basically a variable is a name given to the memory location where the <code class="w3-codespan"><a href="#" onclick="return false;">object</a></code> is stored and you can get the object by calling the name of that variable.</p>
 				<figure>
 				        <center><img class="img-fluid" src="assets/images/post3/varassign.PNG" alt="image"></center>
 				    </figure>
@@ -892,7 +892,8 @@ function myFunction(id) {
 				<h3 id="conclusion" class="mt-5 mb-3"><b>Conclusion</b></h3>
 				<p>In this article, we looked at variables in python. We understood what are variables, how to declare variables and the different methods of assigning a value to a variable. We also understood memory referencing and object identity of variables by using built-in functions in python. We also looked at naming conventions for variables and discussed the python code for every section.</p>
 				
-				<b><hr style="width:100%" class="w3-border-black mt-5 mb-5"></b>
+				<b><hr style="width:100%;border-top: 2px dashed black;" class="w3-border-black mt-5 mb-5"></b>
+					
 					<div class="embed-responsive embed-responsive-16by9 mt-5 mb-3 inverted">
 					   <iframe width="500" height="255" src="https://www.youtube.com/embed/N-vR1J5uBbI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
 					</div>
