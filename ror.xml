@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://kiran-parte.github.io/aiforall/</title>
+  <link>https://kiran-parte.github.io/aiforall/</link>
+
+<item>
+     <link>https://kiran-parte.github.io/aiforall/</link>
+     <title>AI_FOR_ALL</title>
+     <description>Hello world, welcome to AI_FOR_ALL</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kiran-parte.github.io/aiforall/index.html</link>
+     <title>AI_FOR_ALL</title>
+     <description>Hello world, welcome to AI_FOR_ALL</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kiran-parte.github.io/aiforall/about-mob.html</link>
+     <title>AI_FOR_ALL</title>
+     <description>Hello world, welcome to AI_FOR_ALL</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kiran-parte.github.io/aiforall/blog-post.html</link>
+     <title>How to install Anaconda on Windows</title>
+     <description>In this article we are going to look at how to install anaconda on a windows system</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kiran-parte.github.io/aiforall/blog-post-2.html</link>
+     <title>Everything you need to know about Jupyter notebook</title>
+     <description>In this article we are going to look at the interface of jupyter notebbok and understand different notebook operations</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kiran-parte.github.io/aiforall/blog-post-3.html</link>
+     <title>Python 101: Variables and Data Types</title>
+     <description>In this article we are going to look at Variables and Data types in Python</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
