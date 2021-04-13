@@ -1,0 +1,1 @@
+sitemap: https://kiran-parte.github.io/aiforall/sitemap.xml
