@@ -64,6 +64,13 @@
 </style>
 
 <style>
+.hideit{
+position: absolute;
+  left: -999px;
+}
+</style>
+
+<style>
 .switch {
   position: relative;
   display: inline-block;
@@ -253,6 +260,13 @@ div.sticky {
   z-index:1;
 }
 </style>
+
+<style>
+textarea {
+  position: absolute;
+  left: -100%;
+}
+</style>
 	
 </style>
 	
@@ -397,7 +411,20 @@ function myAccFunc(id) {
 }
 </script>
 
-    
+<!-- copy from pre -->
+<script type="text/javascript">
+function copyFunction() {
+  const copyText = document.getElementById("myInput").textContent;
+  const textArea = document.createElement('textarea');
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+}
+
+document.getElementById('button').addEventListener('click', copyFunction);
+</script>
+
     <header class="header text-center inverted">	    
 	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">AI_FOR_ALL</a></h1>
         
@@ -494,15 +521,15 @@ function myAccFunc(id) {
 					<li>complex numbers</li>
 					</ul>
 					
-					<h3 id="what_and_why" class="mt-5 mb-3"><b>Integers:</b></h3>
+					<h3 id="integers" class="mt-5 mb-3"><b>Integers:</b></h3>
 					<p>Integers are a special set of whole numbers. They can be either positive, negative or zero. Integers do not have a fractional componeent.</p>
-					<p>If we store an integer number in a variable that variable is called an integer variable and we can print the value from that variable using the print() statement in python.</p>
+					<p>If you store an integer number in a variable that variable is called an integer variable and you can print the value from that variable using the print() statement in python.</p>
 					<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#integers can be positive negative or zero</font></b></code></span>
 <span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000"># &lt; ...-3, -2, -1, 0, 1, 2, 3... ></font></b></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"></code></span>
-<span class="tr e"><span class="th"></span><code class="nohighlight"><b>int_var = 23 <font color="#8b0000">#23 is an integer and int_var is an integer variable</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>int_var <font color="#051094">=</font> 23 <font color="#8b0000">#23 is an integer and int_var is an integer variable</font></b></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the integer value stored in variable</font></b></code></span>
 <span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(int_var)</b></code></span>
 <span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
@@ -513,14 +540,258 @@ function myAccFunc(id) {
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
 </pre>
 
+
 <button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
 <div id="interpreter1" class="w3-hide mb-5">
 <iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-<p>As we discussed earlier the value stored in a variable can be easily accessed by calling the name of that variable so now, let's print the values we stored in our variables. We can easily do that by using the <code class="w3-codespan">print</code> statement in python. The print statement is a built-in function in python which we will be discussing in detail when we look at <a href="#" onclick="return false;">built-in functions</a>.</p>
+				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
+						<h4 class="inverted" id="many_multiple" style="padding-top:6px;color:white;"><b>Casting:</b></h4>
+				</div>
+					<p>As we assign an integer number to a variable python dynamically allocates the data type i.e. the variable is automatically declared as an integer variable the moment you assign an integer value to it. But if you want to specify the type of a variable you can do that by casting</p>
+					<p>For casting you can use the int() function. The int() function is a built-in function in python. When you pass any number or a string (which resembles a number) as a parameter to the int() function It returns an integer i.e. it converts the given number or string to an integer.</p><br>
+					<div class="w3-container">
+					<div class="w3-card-4 w3-round-large w3-light-grey w3-border-black" style="width:100%;" >
+					<p style="margin-left:10px;"><b>The syntax of int() function is:</b></p>
+					<p class="w3-panel w3-round-large w3-grey w3-border-black" style="margin:10px;"><b>int(x=0, base=10)</b></p><br>
+					<p style="margin-left:10px;"><b>The int() function takes two parameters:</b></p>
+					<ul>
+					<li><b>x</b> - Number or string to be converted to integer. The default value is zero.</li>
+					<li><b>base</b> - Base of the number x.</li>
+					</ul>
 
-<p>To print the value stored in a variable just pass the name of that variable as a parameter into the print function <code class="w3-codespan">print(variable_name)</code>.</p>
+					<p style="margin-left:10px;"><b>The int() function returns:</b></p>
+					<ul>
+					<li>an integer converted from the given number or string, default base is 10</li>
+					<li>If No parameters are given, returns 0</li>
+					<li>If base given, treats the string in the given base (0, 2, 8, 10, 16)</li>
+					</ul>
+					</div>
+					</div><br>
+					
+					<p>Further you can also check the type of the variable using the type() or isinstance() function. The type() function tells us the class type of a given object(here variable) and the isinstance() function tells us if a given object belongs to a particular class type(). The isinstance() function takes two parameters the object and the class type and it returns True if the object belongs to the specified class type.</>
+					<p>The parameters for a function are passed in between the round brackets int(parameter). We will be discussing functions in detail later.</p>
+
+					<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are using the int() function to specify that 23 is an integer</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>int_var <font color="#051094">=</font> int(23) <font color="#8b0000"></font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value stored in variable</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(int_var)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the class type of the variable</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(int_var))</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Checking if the variable belongs to class type integer</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">isinstance</font>(int_var, int))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 23</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> True</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+<p>As we can see above the variable belongs to integer class i.e. the given variable is an integer variable.</p>
+
+<p>int() function can also be used for different number systems such as binary, hexadecimal or octal</p>
+<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are using the int() function for binary numbers</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>bin_int_var <font color="#051094">=</font> <font color="#009900">'1100'</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for 1100:"</font>, <font color="#5416B4">int</font>(bin_int_var, 2))</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for 0b1100"</font>, <font color="#5416B4">int</font>(0b1100, 2))</b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are using the int() function for octal numbers</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>oct_int_var <font color="#051094">=</font> <font color="#009900">'14'</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for 14:"</font>, <font color="#5416B4">int</font>(oct_int_var, 8))</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for 0o14:"</font>, <font color="#5416B4">int</font>(0o14, 8))</b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are using the int() function for hexadecimal numbers</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>hex_int_var <font color="#051094">=</font> <font color="#009900">'c'</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for c:"</font>, <font color="#5416B4">int</font>(hex_int_var, 16))</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#009900">"int for 0xc:"</font>, <font color="#5416B4">int</font>(0xc, 16))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for 1100: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for 0b1100: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for 14: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for 0o14: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for c: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> int for 0xc: 12</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+
+				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
+						<h4 class="inverted" id="many_multiple" style="padding-top:6px;color:white;"><b>Casting:</b></h4>
+				</div>
+					<h5><b>The conventional base-10 method</b></h5>
+					<p>The conventional method of writing integers is using the base-10 decimal system, the way we have discussed above. Integers are just decimal numbers with the fractional part as zero.</p>
+
+<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are writing an integer using base-10 decimal system</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>int_var <font color="#051094">=</font> 1234 <font color="#8b0000"></font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(int_var)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the class type of the variable</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(int_var))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 1234</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+					<h5><b>Using underscores</b></h5>
+					<p>Integers in python can also be written using underscores in between i.e. the individual digits can be seperated by an underscore</>
+					
+					<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are writing integer using underscores</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>int_var <font color="#051094">=</font> 12_34_56_78 <font color="#8b0000"></font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(int_var)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the class type of the variable</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(int_var))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 12345678</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+					
+					<h5><b>Using different number systems</b></h5>
+					<p>You can also write integers in python using different number systems such as binary (base-2), octal (base-8) or hexadecimal(base-16).</p>
+					
+					<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Integers in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Here we are writing integers using different number systems</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#using base-2 binary system</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>bin_int_var <font color="#051094">=</font> 0b110101 <font color="#8b0000"></font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#using base-8 octal system</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>oct_int_var <font color="#051094">=</font> 0o20 <font color="#8b0000"></font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#using base-16 hexadecimal system</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>hex_int_var <font color="#051094">=</font> 0xFF <font color="#8b0000"></font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the values</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(bin_int_var)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(oct_int_var)</b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(hex_int_var)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the class type of the variables</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(bin_int_var))</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(oct_int_var))</b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(<font color="#5416B4">type</font>(hex_int_var))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 53</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 16</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 255</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span class="s" style="background:black;"></span><code class="nohighlight"><font color="white"><b>>> &lt;class 'int'></b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/9ad8477962?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
+						<h4 class="inverted" id="many_multiple" style="padding-top:6px;color:white;"><b>Signed and unsigned integers in python</b></h4>
+				</div>
+<p>Like C there are no signed and unsigned integer data types in python. The <code class="w3-codespan">int</code> in python acts like a signed integer, it can take both negative and positive values</p>
+<p>The signed integer can take both positive and negative values, whereas an unsigned integer can take only positive values.</p>
+<p>The positive integers are stored in the memory in their binary form</p>
+<p>The negative integers are stored in memory in the form of 2's complement</p>
+<p>Let's see how to convert a signed integer to an unsigned integer in python</p>
+<p>To convert a signed integer to an unsigned integer we are going to take the 2's complement of the number</p>
+<p>Let's consider a signed integer number: <code class="w3-codespan">-100</code></p>
+<p>The binary representation of 100, ignoring the minus sign would be: <code class="w3-codespan">00000000000000000000000001100100</code> (32-bit representation)</p>
+<p>Now Let's take 2's complement of the number: <code class="w3-codespan">11111111111111111111111110011100</code></p>
+<p>Now if you take 2's complement of the above number, you get back your original number <code class="w3-codespan">100</code> and the left most leading number, <code class="w3-codespan">1</code> which is a signed bit, indicates that the number is negative</p>
+<p>Converting the 2's complement from binary to decimal you would get: <code class="w3-codespan">4294967196</code> (signed int to unsigned int conversion)</p>
+
+<pre class="code w3-card-4">
+<span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Signed to unsigned Integer in python</b></font></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Add (2^32) to a signed integer to convert it</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#to an unsigned integer</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>signed_int <font color="#051094">= -</font>100 <font color="#8b0000"></font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>unsigned_integer <font color="#051094">=</font> signed_integer<font color="#051094">+</font>2<font color="#051094">**</font>32 <font color="#8b0000"></font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(unsigned_integer)</b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Add (1 &lt;&lt; 32) to a signed integer to convert it</font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#to an unsigned integer</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b>signed_int <font color="#051094">= -</font>200 <font color="#8b0000"></font></b></code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b>unsigned_integer = signed_integer<font color="#051094">+</font>(1 <font color="#051094">&lt;&lt;</font> 32) <font color="#8b0000"></font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"> </code></span>
+<span class="tr e"><span class="th"></span><code class="nohighlight"><b><font color="#8b0000">#Printing the value</font></b></code></span>
+<span class="tr"><span class="th"></span><code class="nohighlight"><b><font color="#9600CD">print</font>(unsigned_integer)</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 4294967196</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code><font color="white"><b>>> 4294967096</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code></code></span>
+</pre>
+
+<button onclick="myFunction('interpreter1')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter1" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/57a3873a10?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+<p><code class="w3-codespan">**</code> is the exponential operator in python. It is same as multiplying x by x, y times <code class="w3-codespan">x^y</code></p>
+<p>The Bitwise left shift <code class="w3-codespan">&lt;&lt;</code> operator performs bit manipulation by shifting the left operand bits of the number to the left, by the number of bits specified. It fills 0 on voids left as a result. </p>
+<p>x &lt;&lt; y Left shifts the integer ‘x’ with ‘y’ integer by y places. It is the same as multiplying x with 2 raised to the power of y <code class="w3-codespan">2**y</code>.</p>
+
+
+<h3 id="floats" class="mt-5 mb-3"><b>Floats:</b></h3>
+<p>Floats are floating-point numbers. These are decimal numbers where the integer and fractional part is seperated by a decimal point. They can be either positive, negative or zero.</p>
+<p>If you store a floating-point number in a variable that variable is called a float variable and you can print the value from that variable using the print() statement in python.</p>
+					
+
 <pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th e"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in var1</font></b></code></span>
