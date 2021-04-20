@@ -299,6 +299,17 @@ display: none;
 }
 </style>
 
+<style>
+h1{
+ font-family:Roboto, sans-serif;
+ font-weight: 900;
+}
+h2{
+ font-family:Roboto, sans-serif;
+ font-weight: 700;
+}
+</style>
+
 </head> 
 
 <body>
@@ -309,35 +320,35 @@ display: none;
   
   <div class="inverted w3-bar-item w3-blue w3-display-container">
     <span onclick="closeRightMenu()" class="w3-button w3-blue w3-display-right w3-padding-18">&times;</span>
-    <p style="font-size:2.3vw;padding-top:15px;">Menu</p>
+    <p style="font-size:2.3vw;padding-top:15px;font-family: Roboto, sans-serif;"><b>Menu</b></p>
   </div>
-  <a href="#what_and_why" class="w3-bar-item w3-button"><b>What are variables and why do we use them?</b></a>
+  <a href="#what_and_why" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">What are variables and why do we use them?</b></a>
   
-  <a href="#declare" class="w3-bar-item w3-button"><b>How to declare variables in python?</b></a>
+  <a href="#declare" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">How to declare variables in python?</b></a>
   
   <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc')">
-  <b>Variable assignment</b> <i class="fa fa-caret-down"></i>
+  <b style="font-family: Roboto, sans-serif; font-weight: 500;">Variable assignment</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc" class="w3-hide w3-white w3-card">
-    <a href="#val_assign" class="w3-bar-item w3-button" style="margin-left: 20px;">Assigning a value to a variable</a>
-    <a href="#one_another" class="w3-bar-item w3-button" style="margin-left: 20px;">Assigning the value of one variable to another</a>
-	<a href="#one_multiple" class="w3-bar-item w3-button" style="margin-left: 20px;">Assigning one value to multiple variables</a>
-	<a href="#many_multiple" class="w3-bar-item w3-button" style="margin-left: 20px;">Assigning many values to multiple variables</a>
+    <a href="#val_assign" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Assigning a value to a variable</a>
+    <a href="#one_another" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Assigning the value of one variable to another</a>
+	<a href="#one_multiple" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Assigning one value to multiple variables</a>
+	<a href="#many_multiple" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Assigning many values to multiple variables</a>
 </div>
 
-<a href="#naming" class="w3-bar-item w3-button"><b>Variable naming conventions</b></a>
+<a href="#naming" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Variable naming conventions</b></a>
 
-<a href="#keywords" class="w3-bar-item w3-button"><b>Reserved keywords</b></a>
+<a href="#keywords" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Reserved keywords</b></a>
 
 <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc1')">
-  <b>Object Referencing and Identity</b> <i class="fa fa-caret-down"></i>
+  <b style="font-family: Roboto, sans-serif; font-weight: 500;">Object Referencing and Identity</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc1" class="w3-hide w3-white w3-card">
-    <a href="#variable_types" class="w3-bar-item w3-button" style="margin-left: 20px;">Variable types</a>
-    <a href="#casting" class="w3-bar-item w3-button" style="margin-left: 20px;">Casting</a>
-    <a href="#object_id" class="w3-bar-item w3-button" style="margin-left: 20px;">Object id</a>
+    <a href="#variable_types" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Variable types</a>
+    <a href="#casting" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Casting</a>
+    <a href="#object_id" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Object id</a>
 </div>
-  <a href="#conclusion" class="w3-bar-item w3-button"><b>Conclusion</b></a>
+  <a href="#conclusion" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Conclusion</b></a>
 </div>
 
 <div class="sticky inverted">
@@ -439,7 +450,7 @@ function myAccFunc(id) {
 				    <a class="btn btn-primary" href="#">Get in Touch</a>
 				    
 				</div>
-				<p></p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;"></p>
 				
 				<label class="switch" for="mycheck">
   <input type="checkbox" onclick="toggledarkTheme()" id="mycheck">
@@ -488,11 +499,11 @@ function myAccFunc(id) {
 				    </figure>
 					<p class="mt-2">In this article we are going to look at variables in python. We are going to understand variables by answering some basic questions such as, what are variables?, why do we use variables?, How to declare variables?, what are naming conventions for variables?, etc. We are also going to briefly discuss some basic data types such as numbers and strings. We will be understanding every data type in detail in further articles, So let's get started!!!</p>
 					<h3 id="what_and_why" class="mt-5 mb-3"><b>What are variables and why do we use them?</b></h3>
-					<p>Variables in python are reserved memory locations. They act as containers to store data. So basically each variable is pointing to a memory location and the value stored in the variable can be accessed by calling the name of the variable.</p>
-					<p>Suppose you have to write 1000s of lines of code and there is one value which is occuring repeatedly in your code, now suddenly you want to change that value, one thing you can do is go to each line and change that value manually, which is not feasible. Here variables come into picture. You declare a variable once and you store that value in the variable. Now whenever you want that value anywhere in your code you can get it easily by calling the name of the variable, in which that value has been stored. Now suppose you want to change that value, wherever it appears in your code, you can do that easily by changing the value stored in the variable.
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Variables in python are reserved memory locations. They act as containers to store data. So basically each variable is pointing to a memory location and the value stored in the variable can be accessed by calling the name of the variable.</p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Suppose you have to write 1000s of lines of code and there is one value which is occuring repeatedly in your code, now suddenly you want to change that value, one thing you can do is go to each line and change that value manually, which is not feasible. Here variables come into picture. You declare a variable once and you store that value in the variable. Now whenever you want that value anywhere in your code you can get it easily by calling the name of the variable, in which that value has been stored. Now suppose you want to change that value, wherever it appears in your code, you can do that easily by changing the value stored in the variable.
 					
 					<h3 id="declare" class="mt-5 mb-3"><b>How to declare variables in python?</b></h3>
-					<p>There is no specific command to declare variables in python. Declaring a variable is pretty straightforward and easy. You just write the name of the variable and assign a value to it.
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">There is no specific command to declare variables in python. Declaring a variable is pretty straightforward and easy. You just write the name of the variable and assign a value to it.
 					
 <pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#These are variables in python</b></font></code></span>
@@ -502,9 +513,9 @@ function myAccFunc(id) {
 <span class="tr e"><span class="th"></span><code class="nohighlight"><b>var3 = <font color="#009900">"python"</font> <font color="#8b0000">#python is stored in variable var3</font></b></code></span>
 </pre>
 
-<p>As we discussed earlier the value stored in a variable can be easily accessed by calling the name of that variable so now, let's print the values we stored in our variables. We can easily do that by using the <code class="w3-codespan">print</code> statement in python. The print statement is a built-in function in python which we will be discussing in detail when we look at <a href="#" onclick="return false;">built-in functions</a>.</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">As we discussed earlier the value stored in a variable can be easily accessed by calling the name of that variable so now, let's print the values we stored in our variables. We can easily do that by using the <code class="w3-codespan">print</code> statement in python. The print statement is a built-in function in python which we will be discussing in detail when we look at <a href="#" onclick="return false;">built-in functions</a>.</p>
 
-<p>To print the value stored in a variable just pass the name of that variable as a parameter into the print function <code class="w3-codespan">print(variable_name)</code>.</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">To print the value stored in a variable just pass the name of that variable as a parameter into the print function <code class="w3-codespan">print(variable_name)</code>.</p>
 <pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th e"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in var1</font></b></code></span>
@@ -542,11 +553,11 @@ function myFunction(id) {
 </script>
 
 				<h3 id="assign" class="mt-5 mb-3"><b>Variable assignment</b></h3>
-				<p></p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;"></p>
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="val_assign" style="padding-top:6px;color:white;"><b>Assigning a value to a variable</b></h4>
 				</div>
-				<p>As we discussed earlier, there is no special command to assign a value to a variable. To declare a variable just write the name of the variable and assign a value to it. If you change the value of an existing variable i.e. if you assign a new value to a pre-existing variable, the old value will be discarded.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">As we discussed earlier, there is no special command to assign a value to a variable. To declare a variable just write the name of the variable and assign a value to it. If you change the value of an existing variable i.e. if you assign a new value to a pre-existing variable, the old value will be discarded.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#23 is stored in var1</font></b></code></span>
@@ -576,7 +587,7 @@ function myFunction(id) {
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="one_another" style="padding-top:6px;color:white;"><b>Assigning the value of one variable to another</b></h4>
 				</div>
-				<p>You can assign the value of one variable to another.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">You can assign the value of one variable to another.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr "><span class="th"></span><code class="nohighlight"><b>var = 23 <font color="#8b0000">#23 is stored in var1</font></b></code></span>
@@ -602,7 +613,7 @@ function myFunction(id) {
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="one_multiple" style="padding-top:6px;color:white;"><b>Assigning one value to multiple variables</b></h4>
 				</div>
-				<p>Python allows chained assignment, which makes it possible to assign the same value to multiple variables simultaneously.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">Python allows chained assignment, which makes it possible to assign the same value to multiple variables simultaneously.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1 = var2 = var3 = 23 <font color="#8b0000">#23 is stored in var1, var2 &#38; var3</font></b></code></span>
@@ -629,7 +640,7 @@ function myFunction(id) {
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="many_multiple" style="padding-top:6px;color:white;"><b>Assigning many values to multiple variables</b></h4>
 				</div>
-				<p>You can assign many values to multiple variables simultaneously.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">You can assign many values to multiple variables simultaneously.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1, var2, var3 = 23, 23.26, <font color="#009900">"python"</font></b></code></span>
@@ -657,7 +668,7 @@ function myFunction(id) {
 </div>
 				
 				<h3 id="naming" class="mt-5 mb-3"><b>Variable naming conventions</b></h3>
-				<p>There are certain rules you need to follow while naming variables in python.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">There are certain rules you need to follow while naming variables in python.</p>
 				<div class="w3-container">
 				<div class="w3-card-4 w3-round-large w3-light-grey" style="width:100%;" >
 				<ul>
@@ -700,10 +711,10 @@ function myFunction(id) {
 </div>
 
 <div style="padding-top:15px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
-<p><b>!NOTE: while naming variables make sure the name of the variable describes the purpose for which the variable is being used for e.g. if you want to store time you can name your variable as <code class="w3-codespan">current_time</code></b></p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>!NOTE: while naming variables make sure the name of the variable describes the purpose for which the variable is being used for e.g. if you want to store time you can name your variable as <code class="w3-codespan">current_time</code></b></p>
 </div>
 				<h3 id="keywords" class="mt-5 mb-3"><b>Reserved keywords</b></h3>
-				<p>There are certain <a href="#" onclick="return false;">keywords</a> in python which are reserved to perform specific operations. You are not supposed to use these keywords as variable names.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">There are certain <a href="#" onclick="return false;">keywords</a> in python which are reserved to perform specific operations. You are not supposed to use these keywords as variable names.</p>
 <table class="w3-round-xlarge mt-5 mb-3" id="comm_table">
   <tr>
     <th colspan="5"><center><b class="inverted">Python reserved keywords</b></center></th>
@@ -761,17 +772,17 @@ function myFunction(id) {
 
 </table>
 				<h3 id="object_ref" class="mt-5 mb-3"><b>Object Referencing and Identity</b></h3>
-				<p>What exactly happens when we assign a value to a variable in python? The python variable is a reserved memory location i.e. when you declare a variable, that variable is pointing to the memory location, where the assigned value has been stored. So basically a variable is a name given to the memory location where the <code class="w3-codespan"><a href="#" onclick="return false;">object</a></code> is stored and you can get the object by calling the name of that variable.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">What exactly happens when we assign a value to a variable in python? The python variable is a reserved memory location i.e. when you declare a variable, that variable is pointing to the memory location, where the assigned value has been stored. So basically a variable is a name given to the memory location where the <code class="w3-codespan"><a href="#" onclick="return false;">object</a></code> is stored and you can get the object by calling the name of that variable.</p>
 				<figure>
 				        <center><img class="img-fluid" src="assets/images/post3/varassign.PNG" alt="image"></center>
 				    </figure>
-				<p>Python is a an <a href="#" onclick="return false;">object-oriented language</a> so basically every item of data (variables) in Python is an <a href="#" onclick="return false;">object</a> of a specific type or class. We will be discussing this in detail when we look at <code class="w3-codespan"><a href="#" onclick="return false;">object-oriented programming</a></code> in python.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">Python is a an <a href="#" onclick="return false;">object-oriented language</a> so basically every item of data (variables) in Python is an <a href="#" onclick="return false;">object</a> of a specific type or class. We will be discussing this in detail when we look at <code class="w3-codespan"><a href="#" onclick="return false;">object-oriented programming</a></code> in python.</p>
 				
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="variable_types" style="padding-top:6px;color:white;"><b>Variable types</b></h4>
 				</div>
-				<p><a href="#" onclick="return false;">Data types</a> in python are a way or categorizing or classifying data into different types. A data type tells us what kind of operations can be performed on that particular data. There are 7 different data types in python <code class="w3-codespan"><a href="#" onclick="return false;">Numbers</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">strings</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Lists</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Tuples</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Sets</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Dictionaries</a></code> and <code class="w3-codespan"><a href="#" onclick="return false;">Booleans</a></code>. We will discussing all these data types in detail later.</p>
-				<p>Variables in python can belong to different data types based on the data assigned to them.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;"><a href="#" onclick="return false;">Data types</a> in python are a way or categorizing or classifying data into different types. A data type tells us what kind of operations can be performed on that particular data. There are 7 different data types in python <code class="w3-codespan"><a href="#" onclick="return false;">Numbers</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">strings</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Lists</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Tuples</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Sets</a></code>, <code class="w3-codespan"><a href="#" onclick="return false;">Dictionaries</a></code> and <code class="w3-codespan"><a href="#" onclick="return false;">Booleans</a></code>. We will discussing all these data types in detail later.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">Variables in python can belong to different data types based on the data assigned to them.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1 = 23 <font color="#8b0000">#integer variable</font></b></code></span>
@@ -797,13 +808,13 @@ function myFunction(id) {
 <iframe src="https://trinket.io/embed/python3/5e63a232b7?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-<p>As we can see above the first variable <code class="w3-codespan">var1</code> belongs to <a href="#" onclick="return false;">integer type</a> and <code class="w3-codespan">var2</code> belongs <a href="#" onclick="return false;">float type</a> and both these integer and float types come under the data type <code class="w3-codespan"><a href="#" onclick="return false;">number</a></code>. Similarly the variable <code class="w3-codespan">var3</code> belongs to <code class="w3-codespan"><a href="#" onclick="return false;">string</a></code> data type.</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">As we can see above the first variable <code class="w3-codespan">var1</code> belongs to <a href="#" onclick="return false;">integer type</a> and <code class="w3-codespan">var2</code> belongs <a href="#" onclick="return false;">float type</a> and both these integer and float types come under the data type <code class="w3-codespan"><a href="#" onclick="return false;">number</a></code>. Similarly the variable <code class="w3-codespan">var3</code> belongs to <code class="w3-codespan"><a href="#" onclick="return false;">string</a></code> data type.</p>
 
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="casting" style="padding-top:6px;color:white;"><b>Casting</b></h4>
 				</div>
-				<p>In python there is no need of specifying the data type of an <a href="#" onclick="return false;">object</a> while declaring a variable. Python dynamically allocates the data type based on the value assigned to the variable.</p>
-				<p>If you want to specify the data type of a variable, it can be done by casting.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">In python there is no need of specifying the data type of an <a href="#" onclick="return false;">object</a> while declaring a variable. Python dynamically allocates the data type based on the value assigned to the variable.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">If you want to specify the data type of a variable, it can be done by casting.</p>
 				<pre class="code w3-card-4">
 <span class="tr e first-row"><span class="th"></span><code class="nohighlight"><font color="#8b0000"><b>#Variables in python</b></font></code></span>
 <span class="tr"><span class="th"></span><code class="nohighlight"><b>var1 = <font color="#9600CD">int</font>(23) <font color="#8b0000">#integer variable, 23 stored in var1</font></b></code></span>
@@ -834,21 +845,21 @@ function myFunction(id) {
 <div id="interpreter6" class="w3-hide mb-5">
 <iframe src="https://trinket.io/embed/python3/5ad3526913?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
-<p>Here we are using <a href="#" onclick="return false;">built-in functions</a> <code class="w3-codespan"><a href="#" onclick="return false;">int()</a></code> (integer), <code class="w3-codespan"><a href="#" onclick="return false;">float()</a></code> (float) and <code class="w3-codespan"><a href="#" onclick="return false;">str()</a></code> (string) to specify the data type for variables</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">Here we are using <a href="#" onclick="return false;">built-in functions</a> <code class="w3-codespan"><a href="#" onclick="return false;">int()</a></code> (integer), <code class="w3-codespan"><a href="#" onclick="return false;">float()</a></code> (float) and <code class="w3-codespan"><a href="#" onclick="return false;">str()</a></code> (string) to specify the data type for variables</p>
 
 				<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" id="object_id" style="padding-top:6px;color:white;"><b>Object id</b></h4>
 				</div>
-				<p>We know that variables are containers to store data and they point to a memory location. If two or more variables have the same value then they point to the same memory location. Let's suppose we have three variables <code class="w3-codespan">var1</code>, <code class="w3-codespan">var2</code> and <code class="w3-codespan">var3</code>, all have the same value 20, then all these variables will be pointing to the same memory location</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">We know that variables are containers to store data and they point to a memory location. If two or more variables have the same value then they point to the same memory location. Let's suppose we have three variables <code class="w3-codespan">var1</code>, <code class="w3-codespan">var2</code> and <code class="w3-codespan">var3</code>, all have the same value 20, then all these variables will be pointing to the same memory location</p>
 				<figure>
 				        <center><img class="img-fluid" src="assets/images/post3/multiple11.PNG" alt="image"></center>
 				    </figure>
-				<p>Now if we change the value of <code class="w3-codespan">var3</code>, then <code class="w3-codespan">var3</code> will be pointing to a new memory location.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">Now if we change the value of <code class="w3-codespan">var3</code>, then <code class="w3-codespan">var3</code> will be pointing to a new memory location.</p>
 				<figure>
 				        <center><img class="img-fluid" src="assets/images/post3/multiple1.PNG" alt="image"></center>
 				</figure>
 				
-				<p>We can verify the above statements by using the <code class="w3-codespan"><a href="#" onclick="return false;">id()</a></code> function. The <a href="#" onclick="return false;">id()</a> function is a <a href="#" onclick="return false;">built-in function</a> in python and it gives us a unique id for a variable. This unique id represents the memory location where the variable is pointing. We will revisit the <a href="#" onclick="return false;">id()</a> function when we will be looking at <a href="#" onclick="return false;">built-in functions</a> in python.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">We can verify the above statements by using the <code class="w3-codespan"><a href="#" onclick="return false;">id()</a></code> function. The <a href="#" onclick="return false;">id()</a> function is a <a href="#" onclick="return false;">built-in function</a> in python and it gives us a unique id for a variable. This unique id represents the memory location where the variable is pointing. We will revisit the <a href="#" onclick="return false;">id()</a> function when we will be looking at <a href="#" onclick="return false;">built-in functions</a> in python.</p>
 
 
 				<pre class="code w3-card-4">
@@ -890,13 +901,13 @@ function myFunction(id) {
 </div>
 
 				<h3 id="conclusion" class="mt-5 mb-3"><b>Conclusion</b></h3>
-				<p>In this article, we looked at variables in python. We understood what are variables, how to declare variables and the different methods of assigning a value to a variable. We also understood memory referencing and object identity of variables by using built-in functions in python. We also looked at naming conventions for variables and discussed the python code for every section.</p>
-				<p>You can download the jupyter notebook for above post <a href="https://drive.google.com/file/d/158z3Gp_IUx7BGdY-dmqE-F69VVHkix26/view?usp=sharing">here</a>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">In this article, we looked at variables in python. We understood what are variables, how to declare variables and the different methods of assigning a value to a variable. We also understood memory referencing and object identity of variables by using built-in functions in python. We also looked at naming conventions for variables and discussed the python code for every section.</p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;">You can download the jupyter notebook for above post <a href="https://drive.google.com/file/d/158z3Gp_IUx7BGdY-dmqE-F69VVHkix26/view?usp=sharing">here</a>
 
 				<b><hr style="width:100%;border-top: 2px dashed black;" class="w3-border-black mt-5 mb-5"></b>
 					
 					<div class="embed-responsive embed-responsive-16by9 mt-5 mb-3 inverted">
-					   <iframe width="560" height="315" src="https://www.youtube.com/embed/N-vR1J5uBbI?start=524&end=766;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					   <iframe width="560" height="315" src="https://www.youtube.com/embed/N-vR1J5uBbI?start=324&end=766;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				    
 			    <nav class="blog-nav nav nav-justified my-5">
