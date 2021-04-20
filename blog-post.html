@@ -45,16 +45,10 @@
     <!-- Theme CSS -->  
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css">
-	<link id="darktheme" rel="stylesheet" href="assets/css/darkmode.css">	
+    <link id="darktheme" rel="stylesheet" href="assets/css/darkmode.css">	
 	
     
-	
-	
-	<style>
-	span.small {font-size: 0.04vw;}
-	</style>
-	
-	<style>
+<style>
 .switch {
   position: relative;
   display: inline-block;
@@ -195,21 +189,21 @@ display: none;
   
   <div class="inverted w3-bar-item w3-blue w3-display-container">
     <span onclick="closeRightMenu()" class="w3-button w3-blue w3-display-right w3-padding-18">&times;</span>
-    <p style="font-size:2.3vw;padding-top:15px;">Menu</p>
+    <p style="font-size:2.3vw;padding-top:15px;font-family: Roboto, sans-serif;"><b>Menu</b></p>
   </div>
-  <a href="#install_process" class="w3-bar-item w3-button"><b>Anaconda Installation process</b></a>
+  <a href="#install_process" class="w3-bar-item w3-button" style="font-family: Roboto, sans-serif; font-weight: 500;"><b>Anaconda Installation process</b></a>
   
     <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
-  <b>Conda commands</b> <i class="fa fa-caret-down"></i>
+  <b style="font-family: Roboto, sans-serif; font-weight: 500;">Conda commands</b> <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc" class="w3-hide w3-white w3-card">
-    <a href="#create_new" class="w3-bar-item w3-button" style="margin-left: 20px;">Creating a new conda environment</a>
-    <a href="#activate_new" class="w3-bar-item w3-button" style="margin-left: 20px;">Activating and deactivating an environment</a>
-	<a href="#update_new" class="w3-bar-item w3-button" style="margin-left: 20px;">Updating an environment</a>
-	<a href="#clone_new" class="w3-bar-item w3-button" style="margin-left: 20px;">Cloning an environment</a>
-	<a href="#remove_new" class="w3-bar-item w3-button" style="margin-left: 20px;">Removing an environment</a>
+    <a href="#create_new" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Creating a new conda environment</a>
+    <a href="#activate_new" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Activating and deactivating an environment</a>
+	<a href="#update_new" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Updating an environment</a>
+	<a href="#clone_new" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Cloning an environment</a>
+	<a href="#remove_new" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Removing an environment</a>
 </div>
-	<a href="#install_package" class="w3-bar-item w3-button"><b>Installing packages in anaconda environment</b></a>
+	<a href="#install_package" class="w3-bar-item w3-button" style="font-family: Roboto, sans-serif; font-weight: 500;"><b>Installing packages in anaconda environment</b></a>
 </div>
 
 
@@ -313,7 +307,7 @@ function myAccFunc() {
 				    <a class="btn btn-primary" href="#">Get in Touch</a>
 				    
 				</div>
-				<p></p>
+				<p style="font-family: Roboto, sans-serif; font-weight: 500;"></p>
 				
 				<label class="switch" for="mycheck">
   <input type="checkbox" onclick="toggledarkTheme()" id="mycheck">
@@ -356,14 +350,14 @@ function myAccFunc() {
 				        <img class="img-fluid" src="assets/images/blog/anaconda-meta.jpg" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Image Credit: <a href="https://www.anaconda.com/" target="_blank">Anaconda</a></figcaption>
 				    </figure>
-				    <p>Anaconda is a free and open source distribution of Python and R programming language for scientific computing. It is extensively used in data science, machine learning, deep learning and large scale data processing applications. It simplifies package management and deployment. </p>
-				    <p> Let’s see how to install Anaconda on windows and how to create a virtual environment</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Anaconda is a free and open source distribution of Python and R programming language for scientific computing. It is extensively used in data science, machine learning, deep learning and large scale data processing applications. It simplifies package management and deployment. </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;"> Let’s see how to install Anaconda on windows and how to create a virtual environment</p>
 					
 					<h3 id="install_process" class="mt-5 mb-3"><b>Anaconda installation process</b></h3>
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 1:</b></h4>
 					</div>
-				    <p>Open your browser and type the following URL in address bar <span class="w3-tag w3-pale-blue w3-border w3-round"><a href="https://www.anaconda.com" target="_blank">https://anaconda.com</a></span></p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Open your browser and type the following URL in address bar <span class="w3-tag w3-pale-blue w3-border w3-round"><a href="https://www.anaconda.com" target="_blank">https://anaconda.com</a></span></p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image1.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 1</a></figcaption>
@@ -372,7 +366,7 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 2:</b></h4>
 					</div>
-				    <p>Select <code class="w3-codespan"> individual edition </code> from products.</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Select <code class="w3-codespan"> individual edition </code> from products.</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image2.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 2</a></figcaption>
@@ -381,7 +375,7 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 3:</b></h4>
 					</div>
-				    <p>Click on <code class="w3-codespan">Download</code> and you will be redirected to the download options.</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Click on <code class="w3-codespan">Download</code> and you will be redirected to the download options.</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image3.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 3</a></figcaption>
@@ -390,7 +384,7 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 4:</b></h4>
 					</div>
-				    <p>Click on <code class="w3-codespan">32-bit</code> or <code class="w3-codespan">64-bit</code> installer option depending upon your system configuration..</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Click on <code class="w3-codespan">32-bit</code> or <code class="w3-codespan">64-bit</code> installer option depending upon your system configuration..</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image4.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 4</a></figcaption>
@@ -399,7 +393,7 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 5:</b></h4>
 					</div>
-				    <p>Run the setup file after downloading, to start the installation process.</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Run the setup file after downloading, to start the installation process.</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image6.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 5.1</a></figcaption>
@@ -416,13 +410,13 @@ function myAccFunc() {
 				        <img class="inverted img-fluid" src="installation/image9.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 5.4</a></figcaption>
 				    </figure>
-					<p>Here you can either select <code class="w3-codespan">add to path</code> option and add anaconda directly to path during installation, this enables you to run anaconda from anywhere in the command window or you can choose to not select this option add anaconda to path later.</p>
-					<p>Click on <code class="w3-codespan">install</code> option to start the installation</p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Here you can either select <code class="w3-codespan">add to path</code> option and add anaconda directly to path during installation, this enables you to run anaconda from anywhere in the command window or you can choose to not select this option add anaconda to path later.</p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Click on <code class="w3-codespan">install</code> option to start the installation</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image10.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 5.5</a></figcaption>
 				    </figure>
-				    <p>Once the installation is completed you will be see this window</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Once the installation is completed you will be see this window</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image12.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 5.6</a></figcaption>
@@ -439,18 +433,18 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted" style="padding-top:6px;color:white;"><b>Step 6:</b></h4>
 					</div>
-				    <p>Once the installation is finished, following files will be installed on your windows system.</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">Once the installation is finished, following files will be installed on your windows system.</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image15.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 6.1</a></figcaption>
 				    </figure>
-					<p>Now open the <code class="w3-codespan">anaconda navigator</code></p>
-					<p>Since we will be using <code class="w3-codespan">jupyter notebook</code> extensively, you can launch Jupyter notebook directly from anaconda navigator</p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Now open the <code class="w3-codespan">anaconda navigator</code></p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Since we will be using <code class="w3-codespan">jupyter notebook</code> extensively, you can launch Jupyter notebook directly from anaconda navigator</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image17.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 6.2</a></figcaption>
 				    </figure>
-				    <p>To check if Anaconda has been correctly added to path, run command prompt and type <code class="w3-codespan">conda</code>. It should give you a list of all the anaconda commands</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To check if Anaconda has been correctly added to path, run command prompt and type <code class="w3-codespan">conda</code>. It should give you a list of all the anaconda commands</p>
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image18.png" alt="image">
 				        <figcaption class="mt-2 text-center image-caption">Step 6.3</a></figcaption>
@@ -461,17 +455,17 @@ function myAccFunc() {
 						<h4 class="inverted"  id="create_new" style="padding-top:6px;color:white;"><b>Creating a new conda environment:</b></h4>
 					</div>
 					
-				    <p>To create a new environment you can use the following command:</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To create a new environment you can use the following command:</p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda create --name myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda create --name myenv</b></code></p>
 					</div> 
-					<p>When asked to proceed, type <code class="w3-codespan">y</code>:</p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">When asked to proceed, type <code class="w3-codespan">y</code>:</p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>proceed ([y]/n)?</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>proceed ([y]/n)?</b></code></p>
 					</div> 
 					
 					<div style="padding-top:15px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
-						<p><b> NOTE: Here, replace myenv with the name of your environment</b></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b> NOTE: Here, replace myenv with the name of your environment</b></p>
 					</div>
 					
 					
@@ -479,54 +473,54 @@ function myAccFunc() {
 				        <img class="inverted img-fluid" src="installation/image20.png" alt="image">
 				    </figure>
 					
-				    <p>To create an environment with specific version of python the command is: </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To create an environment with specific version of python the command is: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda create -n myenv python==3.6</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda create -n myenv python==3.6</b></code></p>
 					</div> 
 					
-					 <p>To create an environment with specific package the command is: </p>
+					 <p style="font-family: Roboto, sans-serif; font-weight: 500;">To create an environment with specific package the command is: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda create -n myenv numpy</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda create -n myenv numpy</b></code></p>
 					</div> 
 					
-					 <p>To create an environment with specific version of python and multiple packages the command is: </p>
+					 <p style="font-family: Roboto, sans-serif; font-weight: 500;">To create an environment with specific version of python and multiple packages the command is: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda create --n myenv python==3.6 numpy==1.10</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda create --n myenv python==3.6 numpy==1.10</b></code></p>
 					</div> 
 					
-					<p>To create an environment from a yml fileuse the following command: </p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">To create an environment from a yml fileuse the following command: </p>
 					
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda env create -f environment.yml</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda env create -f environment.yml</b></code></p>
 						
 					</div> 
 					<div style="padding-top:15px;" class="w3-panel w3-light-grey">
-						<p>A yml file contains a list of all the packages you want to install in an environment. It is ideal to use a yml file while creating an environment as you can easily share your environment setup with anyone who wants to reproduce your results and you always have a backup of your setup. Incase something goes wrong you can easily create your environment again with the exact same setup. The first line of the yml file sets the name for the environment</p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;">A yml file contains a list of all the packages you want to install in an environment. It is ideal to use a yml file while creating an environment as you can easily share your environment setup with anyone who wants to reproduce your results and you always have a backup of your setup. Incase something goes wrong you can easily create your environment again with the exact same setup. The first line of the yml file sets the name for the environment</p>
 						</div>
 					
 					<div style="padding-top:15px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
-						<p><b>You can use the following command for more information</b></p>
-						<p><code class="w3-codespan"><b>conda create --help</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>You can use the following command for more information</b></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="w3-codespan"><b>conda create --help</b></code></p>
 					</div>
 					
 					<div style="padding-top:15px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
-						<p><b>The following command gives you a list of all the installed environments</b></p>
-						<p><code class="w3-codespan"><b>conda env list</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>The following command gives you a list of all the installed environments</b></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="w3-codespan"><b>conda env list</b></code></p>
 					</div>
 					
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4  class="inverted"  id="activate_new" style="padding-top:6px;color:white;"><b>Activating and deactivating an environment:</b></h4>
 					</div>
-				    <p>To activate an environment you can use the following command: </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To activate an environment you can use the following command: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda activate myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda activate myenv</b></code></p>
 					</div> 
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image21.png" alt="image">
 				    </figure>
-					<p>Once your environment is running you can use the following command to deactivate the running environment </p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">Once your environment is running you can use the following command to deactivate the running environment </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda deactivate</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda deactivate</b></code></p>
 					</div> 
 					<figure>
 				        <img class="inverted img-fluid" src="installation/image22.png" alt="image">
@@ -535,63 +529,63 @@ function myAccFunc() {
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4  class="inverted"  id="update_new" style="padding-top:6px;color:white;"><b>Updating an environment:</b></h4>
 					</div>
-				    <p>To update an environment you can use the following command: </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To update an environment you can use the following command: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda activate myenv</b></code></p>
-						<p><code class="codespan"><b>conda update --all</b></code></p>
-						<p><b>OR without activating the environment</b><p>
-						<p><code class="codespan"><b>conda update --n myenv --all</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda activate myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda update --all</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>OR without activating the environment</b><p style="font-family: Roboto, sans-serif; font-weight: 500;">
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda update --n myenv --all</b></code></p>
 					</div>
 					
-					<p>To update an existing environment from a yml file you can use the following command: </p>
+					<p style="font-family: Roboto, sans-serif; font-weight: 500;">To update an existing environment from a yml file you can use the following command: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda activate myenv</b></code></p>
-						<p><code class="codespan"><b>conda env update --file environment.yml</b></code></p>
-						<p><b>OR without activating the environment</b><p>
-						<p><code class="codespan"><b>conda env update --name myenv --file environment.yml</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda activate myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda env update --file environment.yml</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>OR without activating the environment</b><p style="font-family: Roboto, sans-serif; font-weight: 500;">
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda env update --name myenv --file environment.yml</b></code></p>
 					</div>
 					
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted"  id="clone_new" style="padding-top:6px;color:white;"><b>Cloning an environment:</b></h4>
 					</div>
-				    <p>To clone an environment you can use the following command: </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To clone an environment you can use the following command: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda create --name myclone --clone myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda create --name myclone --clone myenv</b></code></p>
 					</div> 	
 					<div style="padding-top:15px;" class="w3-panel w3-light-grey">
-						<p>Here, myclone is the name of the new environment and myenv is the name the existing environment</p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;">Here, myclone is the name of the new environment and myenv is the name the existing environment</p>
 					</div>
 					
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted"  id="remove_new" style="padding-top:6px;color:white;"><b>Removing an environment:</b></h4>
 					</div>
-				    <p>To remove an environment you can use the following command: </p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To remove an environment you can use the following command: </p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda env remove -n myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda env remove -n myenv</b></code></p>
 					</div> 	
 					
 					<h3 id="install_package" class="mt-5 mb-3"><b>Installing packages in a conda environment:</b></h3>
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted"  style="padding-top:6px;color:white;"><b>Conda install:</b></h4>
 					</div>
-				    <p>To install packages in a conda environment you can use the following commands:</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To install packages in a conda environment you can use the following commands:</p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda activate myenv</b></code></p>
-						<p><code class="codespan"><b>conda install &#60;packagename></b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda activate myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda install &#60;packagename></b></code></p>
 					</div>
 					
 					<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
 						<h4 class="inverted"  style="padding-top:6px;color:white;"><b>Pip install:</b></h4>
 					</div>
 					
-				    <p>To install packages in a conda environment using pip package installer you can use the following commands:</p>
+				    <p style="font-family: Roboto, sans-serif; font-weight: 500;">To install packages in a conda environment using pip package installer you can use the following commands:</p>
 					<div style="padding-top:15px;" class="w3-panel w3-leftbar w3-light-grey w3-xxlarge w3-serif padding-top: 1px" >
-						<p><code class="codespan"><b>conda activate myenv</b></code></p>
-						<p><code class="codespan"><b>pip install &#60;packagename></b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>conda activate myenv</b></code></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="codespan"><b>pip install &#60;packagename></b></code></p>
 					</div>
 					
 					<div style="padding-top:15px;" class="w3-panel w3-pale-red w3-topbar w3-border-red w3-border">
-						<p><b>&#10071; NOTE: While installing packages make sure you are running command prompt as administrator to avoid any permission errors</b></p>
+						<p style="font-family: Roboto, sans-serif; font-weight: 500;"><b>&#10071; NOTE: While installing packages make sure you are running command prompt as administrator to avoid any permission errors</b></p>
 					</div>
 					
 				    
