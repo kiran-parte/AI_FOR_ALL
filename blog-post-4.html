@@ -1124,8 +1124,40 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <div id="interpreter15" class="w3-hide mb-5">
 <iframe src="https://trinket.io/embed/python3/4587c5fd06?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
+		    
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">The precision can be set by the user using the <code class="w3-codespan">.prec</code> property of the <code class="w3-codespan">.getcontext()</code> function from the decimal module.</p>	    
 
-<p style="font-family: Roboto, sans-serif; font-weight: 500;">The trailing zeros are preserved to indicate significance.</p>
+<div  class="w3-card-4 mt-5 mb-5 scrollbar">
+<pre class="code" style="overflow-x: auto;">
+<span class="tr e first-row"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#decimals in Python</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#8b0000">#importing the decimal module</font></b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">import</font> decimal</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#8b0000">#Setting the precision value for a decimal number</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(1<font color="#051094">/</font>7) <font color="#8b0000">#float number</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(decimal.Decimal(1) <font color="#051094">/</font> decimal.Decimal(7)) <font color="#8b0000">#decimal number</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#8b0000">#Setting precision value using getcontext()</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>decimal.getcontext().prec <font color="#051094">=</font> 5 <font color="#8b0000">#precision=5 means only 5 numbers after decimal point</font></b></code></span> 
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(decimal.Decimal(1) <font color="#051094">/</font> decimal.Decimal(7)) <font color="#8b0000">#decimal number</font></b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 0.14285714285714285</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 0.1428571428571428571428571429</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 0.14286</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+</pre></div>	
+		    
+<button onclick="myFunction('interpreter30')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mt-5 mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter30" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/be108f9e15?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		    </div>
+		    
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">The trailing zeros are always preserved in decimal numbers to indicate significance.</p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">The <code class="w3-codespan">decimal</code> module is used when we want to carry out decimal calculations just like schoolbooks.</p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;"><code class="w3-codespan">Decimal</code> is preferred in accounting applications where we need exact decimal representation.</p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">When we want to control the level of precision required and we want to preserve the significant decimal places, we tend to use the <code class="w3-codespan">decimal</code> module.</p>
