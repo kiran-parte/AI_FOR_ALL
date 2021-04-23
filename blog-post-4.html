@@ -1458,6 +1458,10 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <div style="padding-top:10px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
 						<p><b><ul><li>The float value for string infinity is <code class="w3-codespan">inf</code>, which stands for "infinity".</li> <li>The float value for string nan is <code class="w3-codespan">nan</code>, which stands for "not a number".</li> <li>You cannot convert from complex to int or float types.</li></ul></b></p>
 						</div>
+		    
+<div style="padding-top:10px;" class="w3-panel w3-pale-red w3-topbar w3-border-red w3-border">
+	<p><b><ul><li>Note that <code class="w3-codespan">'24' &#8800; 24</code>, here former is a string while latter is an integer number.</li> <li>You can convert from <code class="w3-codespan">string</code> to <code class="w3-codespan">integer</code> or <code class="w3-codespan">float</code> type only if that string resembles a number for e.g. <code class="w3-codespan">'24'</code>, <code class="w3-codespan">'720'</code>, etc.</li></ul></b></p>
+						</div>	
 
 <h3 id="size" class="mt-5 mb-3"><b>Size in memory:</b></h3>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Let's see how much memory do these different numeric types require and which one of these can be efficiently used when you have to store large numbers with a limited memory.</p>
