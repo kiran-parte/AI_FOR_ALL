@@ -1573,7 +1573,8 @@ document.getElementById('button').addEventListener('click', copyFunction);
 				</div>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Since there is no <a href="#" onclick="return false;">built-in function</a> in python to convert from float to binary we can write a simple code of ours which contains two <a href="#" onclick="return false;">user-defined functions</a>. The <code class="w3-codespan">float_to_bin()</code> function converts floating-point number to binary and the <code class="w3-codespan">int_to_bin()</code> function converts an integer number to binary.</p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Note that here we are not using the built-in function <code class="w3-codespan">bin()</code> to convert from integer to binary, instead we have written our own function <code class="w3-codespan">int_to_bin()</code>.</p>
-<p style="font-family: Roboto, sans-serif; font-weight: 500;">If the floating-point number is negative the sign is preserved in the final converted output.</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">To convert a floating-point number to binary we need to split the integer and fractional parts, then convert each of them to binary seperately and finally join the two binary parts, seperated by a decimal point, to get the desired binary representation</p>
+	    <p style="font-family: Roboto, sans-serif; font-weight: 500;">If the floating-point number is negative the sign is preserved in the final converted output.</p>
 
 <div  class="w3-card-4 mt-5 mb-5 scrollbar" style="font-family: Roboto, sans-serif; font-weight: 900;">
 <pre class="code" style="overflow-x: auto; font-family: Roboto, sans-serif; font-weight: 900;">
