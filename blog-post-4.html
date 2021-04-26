@@ -354,7 +354,7 @@ display: none;
   <div id="demoAcc1" class="w3-hide w3-white w3-card">
     <a href="#casting_float" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Casting</a>
     <a href="#ways_float" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Different ways of writing floats</a>
-	<a href="#float_acc" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Float accuracy</a>
+	<a href="#float_acc" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Float precision</a>
 	<a href="#decimal" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Python Decimals</a>
 	<a href="#fraction" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Python Fractions</a>
 </div>
@@ -362,6 +362,14 @@ display: none;
   <a href="#complex" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Complex numbers</b></a>
   
   <a href="#type" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Type conversion</b></a>
+	
+      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('demoAcc2')">
+  <b style="font-family: Roboto, sans-serif; font-weight: 500;">Number systems</b> <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="#num_sys_conv" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Number systems conversion</a>
+    <a href="#float_to_bin" class="w3-bar-item w3-button" style="margin-left: 20px;font-family: Roboto, sans-serif; font-weight: 500;">Float to binary conversion</a>
+</div>
   
   <a href="#size" class="w3-bar-item w3-button"><b style="font-family: Roboto, sans-serif; font-weight: 500;">Size in memory</b></a>
 
@@ -1496,13 +1504,13 @@ document.getElementById('button').addEventListener('click', copyFunction);
 						</div>	
 						
 						
-<h3 id="type" class="mt-5 mb-3"><b>Number systems:</b></h3>
+<h3 id="num_systems" class="mt-5 mb-3"><b>Number systems:</b></h3>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">There are four different number systems in python. These number systems represent the numbers in computer architecture <ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">Binary number system (base-2) [only possible digits: 0s and 1s]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Octal (base-8) [possible digits: 0 to 7]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Hexadecimal (base-16) [numbers can be represented using digits from 0 to 9 and letters a to f]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Decimal (base-10) [possible digits: 0 to 9]</li></ul></p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">We have already discussed how to write different number systems in python <a href="#int_num_systems">here</a>.</p>
 
 
 <div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
-						<h4 class="inverted" id="fraction" style="padding-top:6px;color:white;"><b>Number systems conversion:</b></h4>
+						<h4 class="inverted" id="num_sys_conv" style="padding-top:6px;color:white;"><b>Number systems conversion:</b></h4>
 				</div>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Let's have a look at how to convert from one number system to another in python.</p>
 <ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to binary we can use the <code class="w3-codespan">bin()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to octal we can use the <code class="w3-codespan">oct()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to hexadecimal we can use the <code class="w3-codespan">hex()</code> function.</li></ul>
@@ -1561,7 +1569,7 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">As you can see above there is no built-in function to convert from float to binary, octal or hexadecimal number, only integer numbers can be converted. If you try to convert a floating-point number you will get a Type error.</p>
 
 <div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
-						<h4 class="inverted" id="fraction" style="padding-top:6px;color:white;"><b>Float to binary conversion:</b></h4>
+						<h4 class="inverted" id="float_to_bin" style="padding-top:6px;color:white;"><b>Float to binary conversion:</b></h4>
 				</div>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Since there is no <a href="#" onclick="return false;">built-in function</a> in python to convert from float to binary we can write a simple code of ours which contains two <a href="#" onclick="return false;">user-defined functions</a>. The <code class="w3-codespan">float_to_bin()</code> function converts floating-point number to binary and the <code class="w3-codespan">int_to_bin()</code> function which converts an integer number to binary.</p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Note that here we are not using the built-in function <code class="w3-codespan">bin()</code> to convert from integer to binary, instead we have written our own function <code class="w3-codespan">int_to_bin()</code>.</p>
