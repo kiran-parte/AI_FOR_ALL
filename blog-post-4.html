@@ -1506,7 +1506,7 @@ document.getElementById('button').addEventListener('click', copyFunction);
 				</div>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Let's have a look at how to convert from one number system to another in python.</p>
 <ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to binary we can use the <code class="w3-codespan">bin()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to octal we can use the <code class="w3-codespan">oct()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to hexadecimal we can use the <code class="w3-codespan">hex()</code> function.</li></ul>
-<p style="font-family: Roboto, sans-serif; font-weight: 500;">In python, the <code class="w3-codespan">Binary</code> numbers have <code class="w3-codespan">0b</code> as the prefix whereas, <code class="w3-codespan">Octal</code> and <code class="w3-codespan">Hexadecimal</code> numbers have <code class="w3-codespan">0o</code> and <code class="w3-codespan">0x</code> as the prefix respectively.</p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">In python, <code class="w3-codespan">Binary</code> numbers have <code class="w3-codespan">0b</code> as the prefix whereas, <code class="w3-codespan">Octal</code> and <code class="w3-codespan">Hexadecimal</code> numbers have <code class="w3-codespan">0o</code> and <code class="w3-codespan">0x</code> as the prefix respectively.</p>
 
 <div  class="w3-card-4 mt-5 mb-5 scrollbar">
 <pre class="code" style="overflow-x: auto;">
@@ -1535,6 +1535,10 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Decimal to Hexadecimal</b></font></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>dec_var <font color="#051094">=</font> 97 <font color="#8b0000">#decimal number</font></b></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(<font color="#009900">"97(decimal) to hexadecimal:"</font>, <font color="#5416B4">hex</font>(dec_var))</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Float to Binary</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>float_var <font color="#051094">=</font> 24.26 <font color="#8b0000">#float number</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(<font color="#009900">"24.26(float) to binary:"</font>, <font color="#5416B4">bin</font>(float_var))</b></code></span>
 <span class="tr" style="background:gray;"><span style="background:gray;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>OUTPUT:</b></font></code></span>
@@ -1545,6 +1549,7 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 87(decimal) to octal: 0o127</b></font></code></span>
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 0xCC(hexadecimal) to decimal: 204</b></font></code></span>
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 97(decimal) to hexadecimal: 0x61</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> TypeError: 'float' object cannot be interpreted as an integer</b></font></code></span>
 <span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
 </pre></div>
 
@@ -1553,7 +1558,75 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <iframe src="https://trinket.io/embed/python3/637d589c74?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">As you can see above there is no built-in function to convert from float to binary, octal or hexadecimal number, only integer numbers can be converted. If you try to convert a floating-point number you will get a Type error.</p>
 
+<div class="w3-panel w3-border-black w3-round-xxlarge mt-5 mb-3" style="background-color:#3B7EEB;border: 1px solid black;">
+						<h4 class="inverted" id="fraction" style="padding-top:6px;color:white;"><b>Float to binary conversion:</b></h4>
+				</div>
+
+<div  class="w3-card-4 mt-5 mb-5 scrollbar">
+<pre class="code" style="overflow-x: auto;">
+<span class="tr e first-row"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Program to convert floating-point number to binary</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Function returns binary representation</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#for a floating-point number</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#ff9900">def</font> <font color="#0000ff">float_to_bin</font>(number, places<font color="#051094">=</font>3)</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;abs_num <font color="#051094">=</font> <font color="#9600CD">abs</font>(number)</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;#seperate the integer and fractional part</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(abs_num), abs_num<font color="#051094">%</font>1</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;#convert the integer part to binary</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;#add decimal point and negative sign</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;#if the floating-point number inputted is negative</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;res <font color="#051094">=</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font> <font color="#ff9900">if</font> number<font color="#051094">></font>0 <font color="#ff9900">else</font> <font color="#009900">"-"</font> <font color="#051094">+</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font></b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;#iterate for the given number of decimal places</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;<font color="#ff9900">for</font> _ <font color="#ff9900">in</font> <font color="#9600CD">range</font>(places):</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#keep multiplying the decimal value by 2</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;&emsp;dec <font color="#051094">*=</font> 2</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#seperate the integer and fractional part</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;&emsp;integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(dec), dec<font color="#051094">%</font>1</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#keep adding the integer part to the result</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;&emsp;res <font color="#051094">+=</font> <font color="#9600CD">str</font>(integer)</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;<font color="#ff9900">return</font> res</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Function returns binary representation for an integer number</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#ff9900">def</font> <font color="#0000ff">int_to_bin</font>(num):</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;bin_str <font color="#051094">=</font> <font color="#009900">""</font></b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;<font color="#ff9900">while</font> num <font color="#051094">>=</font> 1:</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#Divide the number by 2 and</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#keep adding remainder to</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#the binary string</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;&emsp;bin_str <font color="#051094">+=</font> <font color="#9600CD">str</font>(num<font color="#051094">%</font>2)</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#First divide the number by 2</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&emsp;&emsp;#then keep dividing the quotient by 2</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;num <font color="#051094">//=</font> 2</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&emsp;<font color="#ff9900">return</font> bin_str</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Take the user input as absolute value of the floating-point number</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>n <font color="#051094">=</font> <font color="#9600CD">float</font>(<font color="#5416B4">input</font>(<font color="#009900">"Enter your floating point value : \n"</font>))</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Take user input for the number of decimal places user want in the result</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>p <font color="#051094">=</font> <font color="#9600CD">int</font>(<font color="#5416B4">input</font>(<font color="#009900">"Enter the number of decimal places of the result : \n"</font>))</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Calling the function</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#9600CD">print</font>(float_to_bin (n, places <font color="#051094">=</font> p))</b></code></span>
+<span class="tr" style="background:gray;"><span style="background:gray;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>OUTPUT:</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> Enter your floating point value :</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 8.234</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> Enter the number of decimal places of the result : </b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 4</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"><font color="white"><b>>> 0001.0011</b></font></code></span>
+<span class="tr b inverted" style="background:black;"><span style="background:black;"></span><code class="nohighlight" style="padding-left:35px;"></code></span>
+</pre></div>
+
+<button onclick="myFunction('interpreter31')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mt-5 mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
+<div id="interpreter31" class="w3-hide mb-5">
+<iframe src="https://trinket.io/embed/python3/637d589c74?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
 
 <h3 id="size" class="mt-5 mb-3"><b>Size in memory:</b></h3>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Let's see how much memory do these different numeric types require and which one of these can be efficiently used when you have to store large numbers with a limited memory.</p>
