@@ -1488,16 +1488,16 @@ document.getElementById('button').addEventListener('click', copyFunction);
 </div>
 
 <div style="padding-top:10px;" class="w3-panel w3-pale-blue w3-topbar w3-border-blue w3-border">
-						<p><b><ul><li>The float value for string infinity is <code class="w3-codespan">inf</code>, which stands for "infinity".</li> <li>The float value for string nan is <code class="w3-codespan">nan</code>, which stands for "not a number".</li> <li>You cannot convert from complex to int or float types.</li></ul></b></p>
+						<p><b><ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">The float value for string infinity is <code class="w3-codespan">inf</code>, which stands for "infinity".</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">The float value for string nan is <code class="w3-codespan">nan</code>, which stands for "not a number".</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">You cannot convert from complex to int or float types.</li></ul></b></p>
 						</div>
 		    
 <div style="padding-top:10px;" class="w3-panel w3-pale-red w3-topbar w3-border-red w3-border">
-	<p><b><ul><li>Note that <code class="w3-codespan">'24'&#8800;24</code>, here former is a string while latter is an integer number.</li> <li>You can convert from <code class="w3-codespan">string</code> to <code class="w3-codespan">integer</code> or <code class="w3-codespan">float</code> type only if that string resembles a number for e.g. <code class="w3-codespan">'24'</code>, <code class="w3-codespan">'720'</code>, etc.</li></ul></b></p>
+	<p><b><ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">Note that <code class="w3-codespan">'24'&#8800;24</code>, here former is a string while latter is an integer number.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">You can convert from <code class="w3-codespan">string</code> to <code class="w3-codespan">integer</code> or <code class="w3-codespan">float</code> type only if that string resembles a number for e.g. <code class="w3-codespan">'24'</code>, <code class="w3-codespan">'720'</code>, etc.</li></ul></b></p>
 						</div>	
 						
 						
 <h3 id="type" class="mt-5 mb-3"><b>Number systems:</b></h3>
-<p style="font-family: Roboto, sans-serif; font-weight: 500;">There are four different number systems in python. These number systems represent the numbers in computer architecture <ul><li>Binary number system (base-2) [only possible digits: 0s and 1s]</li><li>Octal (base-8) [possible digits: 0 to 7]</li><li>Hexadecimal (base-16) [numbers can be represented using digits from 0 to 9 and letters a to f]</li><li>Decimal (base-10) [possible digits: 0 to 9]</li></ul></p>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">There are four different number systems in python. These number systems represent the numbers in computer architecture <ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">Binary number system (base-2) [only possible digits: 0s and 1s]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Octal (base-8) [possible digits: 0 to 7]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Hexadecimal (base-16) [numbers can be represented using digits from 0 to 9 and letters a to f]</li><li style="font-family: Roboto, sans-serif; font-weight: 500;">Decimal (base-10) [possible digits: 0 to 9]</li></ul></p>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">We have already discussed how to write different number systems in python <a href="#int_num_systems">here</a>.</p>
 
 
@@ -1505,6 +1505,9 @@ document.getElementById('button').addEventListener('click', copyFunction);
 						<h4 class="inverted" id="fraction" style="padding-top:6px;color:white;"><b>Number systems conversion:</b></h4>
 				</div>
 <p style="font-family: Roboto, sans-serif; font-weight: 500;">Let's have a look at how to convert from one number system to another in python.</p>
+<ul><li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to binary we can use the <code class="w3-codespan">bin()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to octal we can use the <code class="w3-codespan">oct()</code> function.</li> <li style="font-family: Roboto, sans-serif; font-weight: 500;">To convert from decimal to hexadecimal we can use the <code class="w3-codespan">hex()</code> function.</li></ul>
+<p style="font-family: Roboto, sans-serif; font-weight: 500;">In python, the <code class="w3-codespan">Binary</code> numbers have <code class="w3-codespan">0b</code> as the prefix whereas, <code class="w3-codespan">Octal</code> and <code class="w3-codespan">Hexadecimal</code> numbers have <code class="w3-codespan">0o</code> and <code class="w3-codespan">0x</code> as the prefix respectively.</p>
+
 <div  class="w3-card-4 mt-5 mb-5 scrollbar">
 <pre class="code" style="overflow-x: auto;">
 <span class="tr e first-row"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Number systems conversion in Python</b></font></code></span>
@@ -1547,7 +1550,7 @@ document.getElementById('button').addEventListener('click', copyFunction);
 
 <button onclick="myFunction('interpreter31')" class="inverted w3-button w3-block w3-blue w3-round-xlarge w3-left-align mt-5 mb-5"><b>Try it yourself  <i class="fa fa-caret-down"></b></i></button>
 <div id="interpreter31" class="w3-hide mb-5">
-<iframe src="https://trinket.io/embed/python3/b537901a28?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/637d589c74?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 
