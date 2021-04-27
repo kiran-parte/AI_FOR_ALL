@@ -49,6 +49,28 @@
     <link id="darktheme" rel="stylesheet" href="assets/css/darkmode.css">	
 	
 
+<style> 
+.tab1 {
+  -o-tab-size:4;
+  -moz-tab-size: 4; /* Firefox */
+  tab-size: 4;
+}
+.tab2 {
+  -o-tab-size:8;
+  -moz-tab-size: 8; /* Firefox */
+  tab-size: 8;
+}
+.tab3 {
+  -o-tab-size:12;
+  -moz-tab-size: 12; /* Firefox */
+  tab-size: 12;
+}
+.tab4 {
+  -o-tab-size:16;
+  -moz-tab-size: 16; /* Firefox */
+  tab-size: 16;
+}
+</style>
 	
 	
 <style>
@@ -1579,41 +1601,41 @@ document.getElementById('button').addEventListener('click', copyFunction);
 <div  class="w3-card-4 mt-5 mb-5 scrollbar" style="font-family: Roboto, sans-serif; font-weight: 900;">
 <pre class="code" style="overflow-x: auto; font-family: Roboto, sans-serif; font-weight: 900;">
 <span class="tr e first-row"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Program to convert floating-point number to binary</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span> 
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Function returns binary representation</b></font></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#for a floating-point number</b></font></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#ff4d00">def</font> <font color="#0000ff">float_to_bin</font>(number, places<font color="#051094">=</font>3)</b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;abs_num <font color="#051094">=</font> <font color="#9600CD">abs</font>(number)</b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;#seperate the integer and fractional part</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(abs_num), abs_num<font color="#051094">%</font>1</b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;#convert the integer part to binary</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;#add decimal point and negative sign</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;#if the floating-point number inputted is negative</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;res <font color="#051094">=</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font> <font color="#ff4d00">if</font> number<font color="#051094">></font>0 <font color="#ff4d00">else</font> <font color="#009900">"-"</font> <font color="#051094">+</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font></b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	abs_num <font color="#051094">=</font> <font color="#9600CD">abs</font>(number)</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">	#seperate the integer and fractional part</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(abs_num), abs_num<font color="#051094">%</font>1</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">	#convert the integer part to binary</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">	#add decimal point and negative sign</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">	#if the floating-point number inputted is negative</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	res <font color="#051094">=</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font> <font color="#ff4d00">if</font> number<font color="#051094">></font>0 <font color="#ff4d00">else</font> <font color="#009900">"-"</font> <font color="#051094">+</font> int_to_bin(integer) <font color="#051094">+</font> <font color="#009900">"."</font></b></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"> </code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;#iterate for the given number of decimal places</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff4d00">for</font> _ <font color="#ff4d00">in</font> <font color="#9600CD">range</font>(places):</b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#keep multiplying the decimal value by 2</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dec <font color="#051094">*=</font> 2</b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#seperate the integer and fractional part</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(dec), dec<font color="#051094">%</font>1</b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#keep adding the integer part to the result</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res <font color="#051094">+=</font> <font color="#9600CD">str</font>(integer)</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">	#iterate for the given number of decimal places</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	<font color="#ff4d00">for</font> _ <font color="#ff4d00">in</font> <font color="#9600CD">range</font>(places):</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#keep multiplying the decimal value by 2</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">		dec <font color="#051094">*=</font> 2</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#seperate the integer and fractional part</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">		integer, dec <font color="#051094">=</font> <font color="#9600CD">int</font>(dec), dec<font color="#051094">%</font>1</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#keep adding the integer part to the result</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">		res <font color="#051094">+=</font> <font color="#9600CD">str</font>(integer)</b></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff4d00">return</font> res</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	<font color="#ff4d00">return</font> res</b></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Function returns binary representation for an integer number</b></font></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b><font color="#ff4d00">def</font> <font color="#0000ff">int_to_bin</font>(num):</b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;bin_str <font color="#051094">=</font> <font color="#009900">""</font></b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff4d00">while</font> num <font color="#051094">>=</font> 1:</b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Divide the number by 2 and</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#keep adding remainder to</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#the binary string</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin_str <font color="#051094">+=</font> <font color="#9600CD">str</font>(num<font color="#051094">%</font>2)</b></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#First divide the number by 2</b></font></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#then keep dividing the quotient by 2</b></font></code></span>
-<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num <font color="#051094">//=</font> 2</b></code></span>
-<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff4d00">return</font> bin_str</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	bin_str <font color="#051094">=</font> <font color="#009900">""</font></b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	<font color="#ff4d00">while</font> num <font color="#051094">>=</font> 1:</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#Divide the number by 2 and</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#keep adding remainder to</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#the binary string</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">		bin_str <font color="#051094">+=</font> <font color="#9600CD">str</font>(num<font color="#051094">%</font>2)</b></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#First divide the number by 2</b></font></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b class="tab2">		#then keep dividing the quotient by 2</b></font></code></span>
+<span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">		num <font color="#051094">//=</font> 2</b></code></span>
+<span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b class="tab2">	<font color="#ff4d00">return</font> bin_str</b></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b> </b></code></span>
 <span class="tr"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><font color="#8b0000"><b>#Take the user input as absolute value of the floating-point number</b></font></code></span>
 <span class="tr e"><span class="th" style="position:absolute;"></span><code class="nohighlight" style="padding-left:35px;"><b>n <font color="#051094">=</font> <font color="#9600CD">float</font>(<font color="#5416B4">input</font>(<font color="#009900">"Enter your floating point value : \n"</font>))</b></code></span>
